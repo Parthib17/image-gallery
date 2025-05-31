@@ -258,23 +258,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </style>
 </head>
 
-<body class="animated-bg min-h-screen flex items-center justify-center relative overflow-hidden">
-  <!-- Floating background elements with admin theme -->
-  <div class="floating-element">
-    <i class="fas fa-shield-alt text-8xl text-white"></i>
-  </div>
-  <div class="floating-element">
-    <i class="fas fa-cog text-6xl text-white"></i>
-  </div>
-  <div class="floating-element">
-    <i class="fas fa-database text-7xl text-white"></i>
-  </div>
-  <div class="floating-element">
-    <i class="fas fa-lock text-5xl text-white"></i>
-  </div>
-  <div class="floating-element">
-    <i class="fas fa-server text-6xl text-white"></i>
-  </div>
+<body class="min-h-screen flex items-center justify-center relative overflow-hidden">
+
 
   <div class="admin-card max-w-md w-full mx-4 p-8 rounded-2xl shadow-2xl relative z-10">
     <!-- Header -->

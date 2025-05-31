@@ -224,20 +224,8 @@
   </style>
 </head>
 
-<body class="animated-bg min-h-screen flex items-center justify-center relative overflow-hidden">
-  <!-- Floating background elements -->
-  <div class="floating-element">
-    <i class="fas fa-images text-6xl text-white"></i>
-  </div>
-  <div class="floating-element">
-    <i class="fas fa-camera text-4xl text-white"></i>
-  </div>
-  <div class="floating-element">
-    <i class="fas fa-palette text-5xl text-white"></i>
-  </div>
-  <div class="floating-element">
-    <i class="fas fa-star text-3xl text-white"></i>
-  </div>
+<body class="min-h-screen flex items-center justify-center relative overflow-hidden">
+
 
   <div class="auth-card max-w-md w-full mx-4 p-8 rounded-2xl shadow-2xl relative z-10">
     <!-- Header -->
