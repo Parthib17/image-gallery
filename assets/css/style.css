@@ -1,0 +1,12 @@
+.gallery-image:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+#lightbox {
+  transition: opacity 0.3s ease;
+}
+
+#close-lightbox:hover {
+  color: #ff0000;
+}
