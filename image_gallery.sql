@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2025 at 05:41 PM
+-- Generation Time: Jun 02, 2025 at 05:04 PM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,7 +38,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `username`, `password`) VALUES
-(2, 'admin', 'admin123');
+(2, 'admin', '$2a$12$FUc/0eoOjZv43ZewlIlI8u4AtfTCh9OxbO296mg7DIauVGvR7nda2');
 
 -- --------------------------------------------------------
 
@@ -59,33 +59,34 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `file_name`, `title`, `description`, `uploaded_at`) VALUES
-(27, '683ac626175fd_woman-skate-park.jpg', 'women skates', 'ita a beautiful picture', '2025-05-31 09:04:38'),
-(28, '683ac6486794e_woman-skate-park-training.jpg', 'women skate from another position', 'adfasfvv', '2025-05-31 09:05:12'),
-(29, '683ac650e0d20_horn.jpg', 'horn', 'dsfsd', '2025-05-31 09:05:20'),
-(30, '683ac660c6469_bulb.jpg', 'Bulbss', 'dfsdf', '2025-05-31 09:05:36'),
-(31, '683ac66a85e16_beautiful_lake_scenary.jpg', 'lake', 'dfgfsdfs', '2025-05-31 09:05:46'),
-(32, '683ac6766c0e2_Beautiful_flower.jpg', 'flower', 'dfgsdvvhhjkhg', '2025-05-31 09:05:58'),
-(33, '683ac67fbf5cd_hills.jpg', 'mountain', 'jkgfhfghhg', '2025-05-31 09:06:07'),
-(34, '683ac6975e911_stair.jpg', 'siri', 'dfgsfdsf', '2025-05-31 09:06:31'),
-(35, '683ac6a68779e_gully.jpg', 'western gully', 'sefghkyujhf', '2025-05-31 09:06:46'),
-(37, '683ac6ca4f41e_market.jpg', 'Japanese market ', 'egeefed wsd', '2025-05-31 09:07:22'),
-(39, '683ac6e731766_Home.jpg', 'houses', 'sdfghdsf ', '2025-05-31 09:07:51'),
-(40, '683ada2c8a59f_small bird.jpg', 'Small and cute bird', 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, ', '2025-05-31 10:30:04'),
-(41, '683ada41e96e9_architecture-heroic.jpg', 'Heroic_Architechture', 'in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor', '2025-05-31 10:30:25'),
-(42, '683ada5604c66_duck.jpg', 'Duck on water', 'scovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good', '2025-05-31 10:30:46'),
-(43, '683ada676f3cd_camera-9330674_1920.jpg', 'Old Cameras', 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, ', '2025-05-31 10:31:03'),
-(44, '683ada88458d5_lights-9595813_1920.jpg', 'Beautiful candels', 'opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page ', '2025-05-31 10:31:36'),
-(45, '683adaa296749_wood-9616079_1920.jpg', 'forest', 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, ', '2025-05-31 10:32:02'),
-(46, '683adab870f8d_seeds-9424096_1920.jpg', 'Seeds outline', 'in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor', '2025-05-31 10:32:24'),
-(47, '683adac913747_mountains-9594042_1920.jpg', 'wow mountain', 'in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor', '2025-05-31 10:32:41'),
-(48, '683adaf3d2832_forest-9504070_1920.jpg', 'Beautiful Forest', 'scovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good', '2025-05-31 10:33:23'),
-(49, '683adb0a256ff_animals-9533774_1920.jpg', 'Dog', 'in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor', '2025-05-31 10:33:46'),
-(50, '683adb208405a_istockphoto-1290233518-1024x1024.jpg', 'Cat\'s face', 'scovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good', '2025-05-31 10:34:08'),
-(51, '683adb324ae7c_white-cat-9595396_1920.jpg', 'White cat', 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, ', '2025-05-31 10:34:26'),
-(54, '683b17db6203a_positive-thinking.gif', 'Chenab River', 'It is an indian river.', '2025-05-31 14:53:15'),
-(55, '683b180627bc7_code.png', 'dgfgd', 'dgdgf', '2025-05-31 14:53:58'),
-(57, '683b1ccc5759d_positive-thinking.gif', 'Happy Sad', 'Happt', '2025-05-31 15:14:20'),
-(58, '683b22a22ca6f_logo.png', 'logo', 'logooooooooo', '2025-05-31 15:39:14');
+(60, '683b36c80d141_683adb324ae7c_white-cat-9595396_1920.jpg', 'Cat', 'kjdsfhjvjdbnkls;dcn', '2025-05-31 17:05:12'),
+(62, '683b37f5b1a3d_683ada2c8a59f_small bird.jpg', 'Bird', 'djfjsjkodfkldfvlpb;', '2025-05-31 17:10:14'),
+(63, '683b38652c71a_683ada676f3cd_camera-9330674_1920.jpg', 'Camera', 'hsajdojsdlks', '2025-05-31 17:12:05'),
+(64, '683b38e28eb4d_683ac6ca4f41e_market.jpg', 'Market', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:10'),
+(65, '683b38e2a3c86_683ac6e731766_Home.jpg', 'Home', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:10'),
+(66, '683b38e2de8ec_683ac66a85e16_beautiful_lake_scenary.jpg', 'Beautiful lake scenary', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:10'),
+(67, '683b38e2effc8_683ac67fbf5cd_hills.jpg', 'Hills', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:11'),
+(68, '683b38e31157f_683ac6766c0e2_Beautiful_flower.jpg', 'Beautiful flowers', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:11'),
+(69, '683b38e36d67d_683ac6975e911_stair.jpg', 'Stair', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:11'),
+(70, '683b38e38e5d6_683ac626175fd_woman-skate-park.jpg', 'Skating', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:11'),
+(71, '683b38e3b98c3_683ac6486794e_woman-skate-park-training.jpg', 'Skating', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:11'),
+(72, '683b38e3deb30_683ada41e96e9_architecture-heroic.jpg', 'Architecture', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:11'),
+(73, '683b38e3effc5_683ada5604c66_duck.jpg', 'Duck', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:12'),
+(74, '683b38e40069c_683ada88458d5_lights-9595813_1920.jpg', 'lights', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:12'),
+(75, '683b38e4038e8_683adaa296749_wood-9616079_1920.jpg', 'Wood', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:12'),
+(76, '683b38e40ce19_683adab870f8d_seeds-9424096_1920.jpg', 'Images', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:12'),
+(77, '683b38e40f048_683adac913747_mountains-9594042_1920.jpg', 'Images', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:12'),
+(78, '683b38e41acfc_683adaf3d2832_forest-9504070_1920.jpg', 'Images', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:12'),
+(79, '683b38e42a7ca_683adb0a256ff_animals-9533774_1920.jpg', 'Images', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:12'),
+(80, '683b38e42f40b_683adb208405a_istockphoto-1290233518-1024x1024.jpg', 'Images', 'DSNKJFLXJCVLKDFJXKL', '2025-05-31 17:14:12'),
+(83, '683b3acd182f9_683b17db6203a_positive-thinking.gif', 'Animation', 'ksfhdkfhdsi', '2025-05-31 17:22:21'),
+(87, '683b3e9b4d32c_3500500.jpg', 'Kimi No Namae wa', 'adfkjddkjsjdkjas', '2025-05-31 17:38:35'),
+(88, '683b3f195a861_fca0cd6c-fd43-4e2c-8747-f3359826a35d.jpeg', 'Japanese Shrine', 'A Shinto shrine (ç¥žç¤¾, jinja) is a place of worship in Japan dedicated to the kami, or deities, of the Shinto religion.', '2025-05-31 17:40:41'),
+(89, '683b405c9c4a7_Photo by Nitin Shivaprasad on Unsplash.jpeg', 'Yellow Taxi', 'sajhfkshfsdhkjfhksdhf', '2025-05-31 17:46:04'),
+(90, '683b40ee12055_download.jpeg', 'Kolkata\'s tram', 'grhtjhjkgfds', '2025-05-31 17:48:30'),
+(91, '683b417d26a05_8e65035a0ba7bb2f5eb332cb5948602c.jpg', 'Victoria Memorial', 'ghjdszgfsdhjfghjsdgf', '2025-05-31 17:50:53'),
+(92, '683c10ff49f6b_Snapinsta.app_441029861_1345131509494382_9030706074068793370_n_1080.jpg', 'Scenery ', 'Ababababababababbaba', '2025-06-01 08:36:15'),
+(93, '683db9da2bb12_e9759d25dda53d99a74a148c63c16231.jpg', 'Howrah Bridge', 'ashdkahsdhajsh', '2025-06-02 14:48:58');
 
 -- --------------------------------------------------------
 
@@ -105,14 +106,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'user', 'user@example.com', 'user123'),
-(2, 'parthib', 'parthib@hotmail.com', 'parthib123'),
-(3, 'deb', 'deb123@gmail.com', 'deb123'),
-(6, 'souvik', 'souvik@hotmail.com', 'souvik123'),
-(7, 'Sourav Samanta', 'sourav123@gmail.com', '123'),
-(8, 'Eahtasham', 'eahtasham123@gmail.com', 'eu123'),
-(9, 'newuser', 'newuser123@gmail.com', 'newuser123'),
-(10, 'Eahtasham1', 'Eahtasham1@gmail.com', 'eu1');
+(17, 'user', 'user@gmail.com', '$2y$10$wEUoOZMp1gq9E7QtT/9z/uAYNawQPjxstczRlgzUajZVqSNvDfCQa'),
+(18, 'parthib17', 'parthibmitra1278@gmail.com', '$2y$10$MFThPVWaTN4LEZHGwuGMH.bkDlmsIWolzyvDCea2l0B39CSOq5Cbi');
 
 --
 -- Indexes for dumped tables
@@ -153,13 +148,13 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
